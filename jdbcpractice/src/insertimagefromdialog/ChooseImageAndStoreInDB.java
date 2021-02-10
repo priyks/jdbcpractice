@@ -28,6 +28,7 @@ public class ChooseImageAndStoreInDB {
 		    pstm.executeUpdate();
 		    
 		    JOptionPane.showMessageDialog(null, "Image Inserted Successfully...");
+		    con.close();
 
 		} catch (Exception e) {
 			e.printStackTrace();
