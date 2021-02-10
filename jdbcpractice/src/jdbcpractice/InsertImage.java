@@ -31,7 +31,7 @@ public class InsertImage {
 				System.out.println("Database is Connected...!");
 				psmt = con.prepareStatement(sql);
 				// Inserting Blob type
-				InputStream in = new FileInputStream("E:\\Exception.png");
+				InputStream in = new FileInputStream("E:\\collection.png");
 				psmt.setBlob(1, in);
 
 				psmt.executeUpdate();
