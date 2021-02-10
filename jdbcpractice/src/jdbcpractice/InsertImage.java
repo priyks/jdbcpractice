@@ -30,8 +30,8 @@ public class InsertImage {
 			} else {
 				System.out.println("Database is Connected...!");
 				psmt = con.prepareStatement(sql);
-				// Inserting Blob type
-				InputStream in = new FileInputStream("E:\\collection.png");
+				// Inserting long blob type
+				InputStream in = new FileInputStream("E:\\map.png");
 				psmt.setBlob(1, in);
 
 				psmt.executeUpdate();
